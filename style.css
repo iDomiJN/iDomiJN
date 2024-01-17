@@ -4,28 +4,22 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #3498db, #2980b9);
+  background: linear-gradient(to bottom, #ffaa00, #ff8800); /* Degradado naranja */
   color: #fff;
   font-family: 'Arial', sans-serif;
 }
 
 .content {
   text-align: center;
-  max-width: 80%; /* Limita el ancho del contenido para una mejor legibilidad */
-  margin: 0 auto; /* Centra el contenido horizontalmente */
-}
-
-h1 {
-  font-size: 1.2em;
 }
 
 .center-image {
   display: block;
-  margin: 20px auto; /* Añadido un espacio superior de 20px y centrado horizontalmente */
+  margin: 20px auto; /* Espaciado superior de 20px y centrado horizontalmente */
   max-width: 100%;
   height: auto;
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 0.8em; /* Tamaño de fuente más pequeño */
 }
