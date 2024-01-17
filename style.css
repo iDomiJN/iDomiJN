@@ -1,18 +1,20 @@
 body {
   margin: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   min-height: 100vh;
   background: linear-gradient(to bottom, #3498db, #2980b9);
   color: #fff;
   font-family: 'Arial', sans-serif;
 }
 
+.content {
+  text-align: center;
+}
+
 h1 {
   font-size: 2em;
-  text-align: center;
 }
 
 .center-image {
@@ -22,11 +24,6 @@ h1 {
   height: auto;
 }
 
-.bottom-text {
-  margin-bottom: 20px; /* Añadido un espacio inferior de 20px */
-}
-
-.bottom-text p {
+p {
   font-size: 1.2em;
-  text-align: center;
 }
