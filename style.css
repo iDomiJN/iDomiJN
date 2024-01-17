@@ -1,9 +1,10 @@
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  justify-content: space-between;
+  min-height: 100vh;
   background: linear-gradient(to bottom, #3498db, #2980b9);
   color: #fff;
   font-family: 'Arial', sans-serif;
@@ -16,7 +17,16 @@ h1 {
 
 .center-image {
   display: block;
-  margin: 0 auto;
-  max-width: 100%; /* Ajusta la anchura máxima de la imagen al ancho del contenedor */
-  height: auto; /* Permite que la altura se ajuste automáticamente según la proporción original de la imagen */
+  margin: 20px auto; /* Añadido un espacio superior de 20px */
+  max-width: 100%;
+  height: auto;
+}
+
+.bottom-text {
+  margin-bottom: 20px; /* Añadido un espacio inferior de 20px */
+}
+
+.bottom-text p {
+  font-size: 1.2em;
+  text-align: center;
 }
