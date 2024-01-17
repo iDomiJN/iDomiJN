@@ -4,22 +4,19 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: radial-gradient(circle, #3498db, #2980b9);
+  background: linear-gradient(to bottom, #3498db, #2980b9);
   color: #fff;
   font-family: 'Arial', sans-serif;
 }
 
 h1 {
-  font-size: 3em; /* Aumenta el tamaño del texto */
+  font-size: 2em;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace; /* Cambia la fuente del texto */
-  border: 2px solid #000; /* Añade un borde negro */
-  padding: 10px; /* Espaciado interno para el texto */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añade una sombra al texto */
 }
 
-p {
-  font-size: 1.2em; /* Tamaño del texto de la descripción */
-  text-align: center;
-  margin-top: 20px; /* Espaciado superior para separar la descripción del título */
+.center-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* Ajusta la anchura máxima de la imagen al ancho del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente según la proporción original de la imagen */
 }
