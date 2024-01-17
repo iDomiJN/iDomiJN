@@ -11,6 +11,8 @@ body {
 
 .content {
   text-align: center;
+  max-width: 80%; /* Limita el ancho del contenido para una mejor legibilidad */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
 }
 
 h1 {
@@ -19,7 +21,7 @@ h1 {
 
 .center-image {
   display: block;
-  margin: 20px auto; /* Añadido un espacio superior de 20px */
+  margin: 20px auto; /* Añadido un espacio superior de 20px y centrado horizontalmente */
   max-width: 100%;
   height: auto;
 }
