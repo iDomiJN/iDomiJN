@@ -1,25 +1,78 @@
+/* style.css */
+
+@keyframes moveBackground {
+    from {
+        background-position-y: 0;
+    }
+    to {
+        background-position-y: 100%;
+    }
+}
+
+html,
 body {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #ffaa00, #ff8800); /* Degradado naranja */
-  color: #fff;
-  font-family: 'Arial', sans-serif;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
 }
 
-.content {
-  text-align: center;
+.background-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('Fondo_1.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    animation: moveBackground 10s linear infinite alternate;
 }
 
-.center-image {
-  display: block;
-  margin: 20px auto; /* Espaciado superior de 20px y centrado horizontalmente */
-  max-width: 100%;
-  height: auto;
+.card-container {
+    position: relative;
+    width: 45rem;
+    height: 30rem;
+    border: 2px solid #fafafa10;
+    margin: 0 auto;
 }
 
-p {
-  font-size: 0.8em; /* Tamaño de fuente más pequeño */
+.glass-effect {
+    background: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.4rem);
+}
+
+/* Agrega Fondo_2.png como una nueva capa en la animación */
+.background-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Fondo_2.png') no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    z-index: -1;
+    animation: fadeIn 5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Agrega la imagen 'douglaslogo' en el centro del card-container */
+.card-container::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Utiliza el 100% para que ocupe todo el ancho del card-container */
+    height: 100%; /* Utiliza el 100% para que ocupe toda la altura del card-container */
+    background: url('douglaslogo.png') no-repeat center;
+    background-size: contain;
 }
