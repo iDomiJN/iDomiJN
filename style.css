@@ -28,8 +28,9 @@ body {
 
 .card-container {
     position: relative;
-    width: 45rem;
-    height: 30rem;
+    width: 90%; /* Modificado para ser el 90% del ancho del viewport */
+    max-width: 45rem; /* Agregado para establecer un ancho máximo */
+    height: auto; /* Modificado para que la altura se ajuste automáticamente al contenido */
     border: 2px solid #fafafa10;
     margin: 0 auto;
 }
@@ -71,8 +72,16 @@ body {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%; /* Utiliza el 100% para que ocupe todo el ancho del card-container */
-    height: 100%; /* Utiliza el 100% para que ocupe toda la altura del card-container */
+    width: 70%; /* Modificado para ser el 70% del ancho del card-container */
+    max-width: 300px; /* Agregado para establecer un ancho máximo */
+    height: auto; /* Modificado para que la altura se ajuste automáticamente al contenido */
     background: url('douglaslogo.png') no-repeat center;
     background-size: contain;
+}
+
+@media (max-width: 768px) {
+    /* Añade reglas de estilo específicas para dispositivos con un ancho máximo de 768px */
+    .card-container {
+        width: 95%;
+    }
 }
